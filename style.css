@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;600&display=swap');
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--Soft-Magenta: hsl(300, 69%, 71%);
+	--font-family: 'Poppins', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--Violet);
+	background-image: url("/images/bg-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 1rem;
+	min-height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+
+}
+
+.items {
+	padding: 1rem;
+
+}
+
+.item-1 img {
+	max-width: 125px;
+}
+
+.item-1 {
+	margin: 1rem 0;
+}
+.item-2 figure{
+	max-width: 350px;
+	height: auto;
+}
+
+.item-2 img {
+	max-width: 100%;
+
+}
+
+.item-3 h1 {
+	text-align: center;
+	font-family: var(--font-family);
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 900;
+
+}
+
+.item-3 p {
+	margin: 1rem 0;
+	text-align: center;
+	color: rgb(215, 209, 209);
+	font-size: 1.1262rem;
+	font-weight: 300;
+}
+
+.btn {
+	max-width: 100%;
+	text-align: center;
+}
+
+button {
+	padding: 1rem 5rem;
+	margin: 1rem 0;
+	border: none;
+	border-radius: 30px;
+	color: var(--Violet);
+}
+
+footer {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.fb,
+.tw,
+.insta {
+
+	border-radius: 50%;
+	border: 1px solid #fff;
+	padding: 10px;
+	margin: 0 5px;
+	color: #fff;
+	font-size: 14px;
+
+}
+
+@media (min-width:600px) and (max-width:1500px) {
+
+	body {
+		background-image: url("/images/bg-desktop.svg");
+		background-repeat: no-repeat;
+      background-size:cover;
+      width: 100%;
+	  padding :0 2rem ;
+
+	}
+	.item-1 figure{
+		max-width: 200px;
+
+	}
+	.item-1 img{
+		max-width: 100%;
+	}
+	.item-2 figure{
+		max-width: 900px;
+		height: auto;
+		margin: 1rem 0;
+	}
+	.item-2 img{
+		max-width: 100%;
+	}
+	.wraper{
+		display: flex;
+		justify-content: space-between;
+	}
+	.item-3{
+		max-width: 600px;
+		margin: 5rem 0;
+		padding: 0 2rem;
+
+	}
+	.item-3 h1{
+		text-align: left;
+		font-size: 2.5rem;
+
+	}
+	.item-3 p{
+		text-align: left;
+	}
+	.btn{
+		text-align: left;
+
+
+	}
+	footer{
+		justify-content: right;
+		margin-right: 3rem;
+	}
+	button{
+		font-size: 1rem;
+		transition: 0.5s ease-in-out;
+		cursor: pointer;
+	}
+	button:hover{
+		background-color: var(--Soft-Magenta);
+		color:#fff;
+	}
+	.fb,
+	.tw,
+	.insta{
+		transition: 0.5s ease-in-out;
+		cursor: pointer;
+
+	}
+	.fb:hover{
+		background-color: #fff;
+		color: #1877F2;
+	}
+	.tw:hover{
+		background-color: #fff;
+		color:#1DA1F2;
+	}
+	.insta:hover{
+		background-color: #fff;
+		color:#E4405F;
+	}
+}
